@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Humanistic Approach - Sketch Deck</title>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf7ee;--ink:#2b2b2b;--card:#fffdf6;--acc:#e8643c;--acc2:#3c8ee8;--hi:#ffe27a;--line:#2b2b2b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1d1a;--ink:#f1ece0;--card:#2a2723;--hi:#6b5b1a;--line:#f1ece0}}
+:root[data-theme="dark"]{--bg:#1f1d1a;--ink:#f1ece0;--card:#2a2723;--hi:#6b5b1a;--line:#f1ece0}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font-family:'Patrick Hand','Comic Sans MS',cursive,sans-serif;font-size:20px;background-image:radial-gradient(var(--line) .5px,transparent .5px);background-size:26px 26px;background-position:0 0;display:flex;flex-direction:column}
+h1,h2{font-family:'Caveat','Segoe Print',cursive;margin:0 0 .4em;line-height:1.05}
+h1{font-size:clamp(44px,9vw,84px)}h2{font-size:clamp(34px,6vw,54px)}
+h2 span{background:linear-gradient(transparent 55%,var(--hi) 55%)}
+main{flex:1;overflow:hidden;position:relative}
+.slide{position:absolute;inset:0;padding:4vh 6vw;overflow-y:auto;display:none;animation:in .35s ease}
+.slide.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(14px) rotate(-.4deg)}to{opacity:1;transform:none}}
+.box{background:var(--card);border:3px solid var(--line);border-radius:255px 18px 225px 18px/18px 225px 18px 255px;padding:14px 20px;margin:10px 0;box-shadow:4px 5px 0 var(--line)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+button,.btn{font:inherit;color:var(--ink);background:var(--card);border:3px solid var(--line);border-radius:30px 8px 28px 8px/8px 28px 8px 30px;padding:8px 16px;cursor:pointer;box-shadow:3px 4px 0 var(--line)}
+button:hover{background:var(--hi)}button:active{transform:translate(2px,3px);box-shadow:1px 1px 0 var(--line)}
+nav{display:flex;align-items:center;gap:10px;padding:10px 4vw;justify-content:space-between;flex-wrap:wrap}
+.dots{display:flex;gap:6px;flex-wrap:wrap}.dots i{width:14px;height:14px;border:2px solid var(--line);border-radius:50%;cursor:pointer}.dots i.on{background:var(--acc)}
+.tip{font-size:16px;opacity:.75}
+.pyr{display:flex;flex-direction:column;align-items:center;gap:6px;margin:10px 0}
+.pyr button{width:var(--w);max-width:100%;text-align:center}
+.pyr button.on{background:var(--acc);color:#fff}
+.flip{perspective:800px;height:170px;cursor:pointer}.flip div{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}
+.flip.f div{transform:rotateY(180deg)}
+.flip p{position:absolute;inset:0;margin:0;backface-visibility:hidden;display:flex;align-items:center;justify-content:center;text-align:center;padding:14px;border:3px solid var(--line);border-radius:20px 8px 22px 8px;background:var(--card);box-shadow:4px 5px 0 var(--line)}
+.flip p+p{transform:rotateY(180deg);background:var(--hi)}
+input[type=range]{width:100%;accent-color:var(--acc)}
+.opt{display:block;width:100%;text-align:left;margin:8px 0}.opt.ok{background:#9be08a;color:#222}.opt.no{background:#f4a29a;color:#222}
+svg{max-width:100%}
+</style></head><body>
+<main id="m">
+<section class="slide on">
+ <h1>The <span style="color:var(--acc)">Humanistic</span> Approach</h1>
+ <p style="font-size:26px">A sketchbook tour of psychology's "third force"</p>
+ <div class="grid"><div class="box">1. Core principles</div><div class="box">2. Maslow's Hierarchy</div><div class="box">3. Rogers' Self-Concept</div></div>
+ <svg width="260" height="110" viewBox="0 0 260 110" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><circle cx="50" cy="35" r="20"/><path d="M50 55v35M50 65l-25 15M50 65l25 15M50 90l-18 18M50 90l18 18"/><path d="M110 55c40-50 90-50 130 0" stroke-dasharray="6 8"/><path d="M232 42l10 12-16 2"/><path d="M200 20l6 14 14-6-8 12 12 8-16 2" stroke="#e8643c"/></svg>
+ <p class="tip">Tap Next, press the arrow keys, or click the dots below. Look for things to tap!</p>
+</section>
+
+<section class="slide">
+ <h2><span>Core Principles</span></h2>
+ <p class="tip">Tap a card to flip it.</p>
+ <div class="grid">
+  <div class="flip"><div><p>Free will</p><p>People actively choose their own behaviour and are responsible for it.</p></div></div>
+  <div class="flip"><div><p>Holistic view</p><p>Study the whole person, not isolated parts or behaviours.</p></div></div>
+  <div class="flip"><div><p>Self-actualisation</p><p>The innate drive to grow and fulfil your full potential.</p></div></div>
+ </div>
+</section>
+
+<section class="slide">
+ <h2><span>A Reaction Against Determinism</span></h2>
+ <p class="tip">Pick an approach to see what humanism says back.</p>
+ <div style="display:flex;gap:10px;flex-wrap:wrap"><button data-r="0">Behaviourism</button><button data-r="1">Psychodynamic</button></div>
+ <div class="box" id="react" style="margin-top:16px;min-height:120px">Choose one above.</div>
+</section>
+
+<section class="slide">
+ <h2><span>Maslow's Hierarchy of Needs</span></h2>
+ <p class="tip">Tap each level of the pyramid. Lower needs come first.</p>
+ <div class="pyr" id="pyr"></div>
+ <div class="box" id="pinfo">Start at the bottom: what does a person need first?</div>
+</section>
+
+<section class="slide">
+ <h2><span>Rogers' Self-Concept</span></h2>
+ <p>Self-concept = how we see ourselves. Rogers split it in two:</p>
+ <div class="grid">
+  <div class="box"><b>Actual self</b><br>How I really see myself right now.</div>
+  <div class="box"><b>Ideal self</b><br>The person I would like to be.</div>
+ </div>
+ <p>Drag the slider to change how far apart they are.</p>
+</section>
+
+<section class="slide">
+ <h2><span>Congruence vs Incongruence</span></h2>
+ <input type="range" id="gap" min="0" max="100" value="70" aria-label="Gap between actual and ideal self">
+ <svg viewBox="0 0 400 130" width="100%" height="150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+  <g id="a"><circle cx="0" cy="40" r="18"/><path d="M0 58v35M0 68l-20 14M0 68l20 14M0 93l-14 24M0 93l14 24"/><text x="-30" y="128" stroke="none" fill="currentColor" font-size="16">actual</text></g>
+  <g id="b" stroke="#e8643c" stroke-dasharray="5 5"><circle cx="0" cy="40" r="18"/><path d="M0 58v35M0 68l-20 14M0 68l20 14M0 93l-14 24M0 93l14 24"/><text x="-26" y="128" stroke="none" fill="#e8643c" font-size="16">ideal</text></g>
+ </svg>
+ <div class="box" id="cg"></div>
+</section>
+
+<section class="slide">
+ <h2><span>Conditions of Worth &amp; UPR</span></h2>
+ <p class="tip">Which one is it? Tap a situation.</p>
+ <div class="grid">
+  <button data-c="0">"I'll love you if you get top grades."</button>
+  <button data-c="1">"I love you, whatever happens."</button>
+ </div>
+ <div class="box" id="cw" style="margin-top:16px">Pick a message.</div>
+</section>
+
+<section class="slide">
+ <h2><span>Quick Quiz</span></h2>
+ <div id="quiz"></div>
+</section>
+
+<section class="slide">
+ <h2><span>Key Takeaways</span></h2>
+ <div class="box">Humanism: free will, holism and self-actualisation.</div>
+ <div class="box">Maslow: needs are met in order, ending in self-actualisation.</div>
+ <div class="box">Rogers: congruence between actual and ideal self supports well-being.</div>
+ <div class="box">Unconditional positive regard helps people grow.</div>
+</section>
+</main>
+<nav><button id="prev">&larr; Back</button><div class="dots" id="dots"></div><button id="next">Next &rarr;</button></nav>
+<script>
+var S=[].slice.call(document.querySelectorAll('.slide')),cur=0,dots=document.getElementById('dots');
+S.forEach(function(_,i){var d=document.createElement('i');d.onclick=function(){go(i)};dots.appendChild(d)});
+function go(n){cur=Math.max(0,Math.min(S.length-1,n));S.forEach(function(s,i){s.classList.toggle('on',i===cur)});[].forEach.call(dots.children,function(d,i){d.classList.toggle('on',i===cur)});S[cur].scrollTop=0}
+document.getElementById('prev').onclick=function(){go(cur-1)};document.getElementById('next').onclick=function(){go(cur+1)};
+document.onkeydown=function(e){if(e.key==='ArrowRight')go(cur+1);if(e.key==='ArrowLeft')go(cur-1)};go(0);
+[].forEach.call(document.querySelectorAll('.flip'),function(f){f.onclick=function(){f.classList.toggle('f')}});
+var R=["Behaviourism says the environment and conditioning determine behaviour. Humanism: people are active agents with free will.","The psychodynamic view says unconscious forces drive us. Humanism: we are conscious, self-directed and can choose."];
+[].forEach.call(document.querySelectorAll('[data-r]'),function(b){b.onclick=function(){document.getElementById('react').textContent=R[b.dataset.r]}});
+var L=[["Self-actualisation","Reaching your full potential.",40],["Esteem","Respect, achievement, recognition.",55],["Love &amp; belonging","Friendship, family, relationships.",70],["Safety","Security, stability, shelter.",85],["Physiological","Food, water, sleep.",100]],P=document.getElementById('pyr');
+L.forEach(function(l){var b=document.createElement('button');b.innerHTML=l[0];b.style.setProperty('--w',l[2]+'%');b.onclick=function(){[].forEach.call(P.children,function(c){c.classList.remove('on')});b.classList.add('on');document.getElementById('pinfo').innerHTML='<b>'+l[0]+':</b> '+l[1]};P.appendChild(b)});
+var g=document.getElementById('gap');function upd(){var v=+g.value,x=200-v*1.4,y=200+v*1.4;document.getElementById('a').setAttribute('transform','translate('+x+',0)');document.getElementById('b').setAttribute('transform','translate('+y+',0)');document.getElementById('cg').innerHTML=v<30?'<b>Congruent:</b> the selves are close. Good well-being and growth.':v<65?'<b>Some incongruence:</b> a noticeable gap, some tension.':'<b>Incongruent:</b> a big gap leads to distress and low self-worth.'}
+g.oninput=upd;upd();
+var C=["<b>Condition of worth:</b> acceptance only when expectations are met. This can make the ideal self drift far from the actual self.","<b>Unconditional positive regard:</b> acceptance with no strings attached. It helps people become congruent and grow."];
+[].forEach.call(document.querySelectorAll('[data-c]'),function(b){b.onclick=function(){document.getElementById('cw').innerHTML=C[b.dataset.c]}});
+var Q=[["Which need is at the top of Maslow's hierarchy?",["Esteem","Self-actualisation","Safety"],1],["A big gap between actual and ideal self is called...",["Congruence","Incongruence","Holism"],1],["Acceptance with no conditions is called...",["Unconditional positive regard","Condition of worth","Determinism"],0]],qi=0,sc=0,qe=document.getElementById('quiz');
+function q(){if(qi>=Q.length){qe.innerHTML='<div class="box"><b>Score: '+sc+' / '+Q.length+'</b></div><button id="rs">Try again</button>';document.getElementById('rs').onclick=function(){qi=0;sc=0;q()};return}
+var x=Q[qi];qe.innerHTML='<div class="box">'+x[0]+'</div>';x[1].forEach(function(t,i){var b=document.createElement('button');b.className='opt';b.textContent=t;b.onclick=function(){if(qe.dataset.d)return;qe.dataset.d=1;b.classList.add(i===x[2]?'ok':'no');if(i===x[2])sc++;setTimeout(function(){delete qe.dataset.d;qi++;q()},900)};qe.appendChild(b)})}
+q();
+</script></body></html>
